@@ -1,0 +1,318 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background-image: url(img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+}
+
+.colorOverlay{
+
+    background-color: #00000065;
+    height: 100vh;
+
+}
+
+.headingText{
+
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 50px;
+    position: relative;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+.headingText:after{
+
+    position: absolute;
+    top: 120px;
+    left: 42%;
+    background-color: #ff1515;
+    content: " ";
+    height: 5px;
+    width: 15%;
+    border-radius: 50px;
+
+}
+
+.gameSection{
+
+    margin-top: 50px;
+    /* border: 2px solid white; */
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gameBox{
+
+    /* border: 2px solid white; */
+    width: 650px;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+
+}
+
+.box{
+
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 10px;
+    border: none;
+    background-color: #EBF5DF;
+    cursor: pointer;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.486);
+    transition: all 0.3s ease-in;
+    font-size: 6vmin;
+    color: #EDB458;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bolder;
+
+}
+
+.box:hover{
+
+    background-color: #BAD4AA;
+    color: #fff;
+
+}
+
+.resetButtonSection{
+
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#resetBtn {
+
+    padding: 10px 90px 10px 90px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Oxanium",
+        sans-serif;
+    background-color: #EDB458;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.521);
+
+}
+
+#resetBtn:hover{
+
+    background-color: #fff;
+    color: #E8871E;
+    transition: all 0.7s ease-in;
+
+}
+
+.msg-container{
+
+    background-image: url(img/wallpaperflare.com_wallpaper1.jpg);
+    background-size: cover;
+    background-position: left center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    animation: backgroundAnimation 1.5s ease-in-out;
+
+}
+
+@keyframes backgroundAnimation{
+
+    0%{
+
+        opacity: 0;
+        transform: scale(0);
+
+    }50%{
+
+        opacity: 0.5;
+
+    }100%{
+
+        opacity: 1;
+        transform: scale(1);
+        transition: all 2s ease-in-out;
+
+    }
+
+}
+
+.colorOverlay1{
+
+    background-color: #0000009c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    
+}
+
+#winningText{
+
+    font-size: 10vmin;
+    font-family: "Oxanium",  sans-serif;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 80px;
+    animation: textAnimation 2s ease-in;
+
+}
+
+@keyframes textAnimation{
+
+    0%{
+
+        opacity: 0;
+        transform: translateY(-600px);
+
+    }50%{
+
+        opacity: 0.5;
+
+    }100%{
+
+       opacity: 1;
+       transform: translateY(0px);
+
+    }
+
+}
+
+#new-start{
+
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Oxanium", sans-serif;
+    cursor: pointer;
+    background-color: #E8871E;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    animation: buttonAnimation 2s ease-in 0.2s;
+
+}
+
+@keyframes buttonAnimation{
+
+    0%{
+
+        opacity: 0;
+        transform: scale(0);
+
+    }50%{
+
+        opacity: 0.5;
+
+    }100%{
+
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+}
+
+#new-start:hover{
+
+    background-color: #296b00;
+    border: none;
+    transition: all 0.5s ease;
+    font-weight: bolder;
+    color: #ffffff;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.658);
+
+}
+
+.hide{
+
+    display: none;
+
+}
+
+@media (max-width: 800px){
+
+    body{
+
+        height: 100vh;
+
+    }
+
+    .headingText{
+
+        font-size: 40px;
+        padding-top: 50px;
+
+    }
+
+    .headingText:after{
+
+        position: absolute;
+        top: 110px;
+        left: 30%;
+        width: 40%;
+
+    }
+
+    .gameBox{
+
+        height: 55vh;
+        gap: 15px;
+
+    }
+
+    .box{
+
+        height: 30vmin;
+        width: 30vmin;
+        background-color: #EBF5DF;
+        font-size: 50px;
+
+    }
+
+    .box:hover{
+
+        background-color: #BAD4AA;
+
+    }
+
+    .gameSection{
+
+        margin-top: 20px;
+
+    }
+
+}
